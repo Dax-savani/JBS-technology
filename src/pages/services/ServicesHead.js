@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from '@emotion/react';
 
 
@@ -10,21 +10,21 @@ const ServiceHead = () => {
     <Container maxWidth="lg">
       <Grid>
         <Grid item lg={9} xs={11} sx={{ py: { xs: 8, md: 13 } }}>
-          <div className="heading">
+          <Box className="heading" sx={{fontSize :{md:"48px",xs:"32px"} }}>
             <Typography variant="div" fontWeight="bold">
               We design & build innovative products focused on{" "}
               <Typography variant="span" color={theme.palette.primary.main}>
                 user’s needs
               </Typography>
             </Typography>
-          </div>
-          <div className="service_paragraph">
+          </Box>
+          <Box className="service_paragraph" sx={{my: "20px"}}>
             <Typography>
               Together, we can transform your vision into a thriving business,
               be it through a Minimum Viable Product, UX/UI services, or scaling
               support for your company.
             </Typography>
-          </div>
+          </Box>
         </Grid>
       </Grid>
     </Container>

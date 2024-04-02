@@ -2,19 +2,16 @@ import { useTheme } from "@emotion/react";
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 
-export const BradeCrumbs = () => {
-    const theme = useTheme()
+export const TitleAnimation = ({title}) => {
+  const theme = useTheme();
   return (
     <>
-      <Container>
         <Box
           paddingY={9}
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
-          flexDirection={"column"}
+          align="center"
+        
         >
-          <Box sx={{ fontSize: "35px", fontWeight: "600" }}>Openings</Box>
+          <Box sx={{ fontSize: "35px", fontWeight: "600" }}>{title}</Box>
           <Box sx={{ marginTop: "10px" }}>
             <Box
               sx={{
@@ -25,14 +22,12 @@ export const BradeCrumbs = () => {
               }}
             >
               <Typography
-                              className="bradcrumb"
-                              bgcolor={theme.palette.primary.main}
-               
+                className="bradcrumb"
+                bgcolor={theme.palette.primary.main}
               ></Typography>
             </Box>
           </Box>
         </Box>
-      </Container>
     </>
   );
 };

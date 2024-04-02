@@ -3,21 +3,20 @@ import ServiceHead from "./ServicesHead";
 import { ServicesCounter } from "./ServicesCounter";
 import { Box } from "@mui/material";
 import ServicesProduct from "./ServicesProduct";
+import { useTheme } from "@emotion/react";
 export const Services = () => {
+  const theme = useTheme()
   return (
     <>
-      <Box bgcolor="#FAFAFA">
+      <Box bgcolor={theme.palette.backgroundLiteGrey}>
         <Box>
           <ServiceHead />
         </Box>
-        <Box
-          bgcolor="white"
-        >
+        <Box bgcolor="white">
           <ServicesCounter />
         </Box>
-        <Box
-        >
-        <ServicesProduct />
+        <Box>
+          <ServicesProduct />
         </Box>
       </Box>
     </>

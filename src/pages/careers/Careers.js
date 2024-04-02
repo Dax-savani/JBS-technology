@@ -1,5 +1,5 @@
 import React from "react";
-import { BradeCrumbs } from "./BradeCrumbs";
+import { TitleAnimation } from "../../components/TitleAnimation";
 import { Box } from "@mui/material";
 import { CareerCards } from "./CareerCards";
 
@@ -8,7 +8,7 @@ export const Careers = () => {
     <>
       <Box bgcolor="#FAFAFA">
         <Box bgcolor={"white"}>
-          <BradeCrumbs />
+          <TitleAnimation title="Openings" />
         </Box>
         <Box>
           <CareerCards />

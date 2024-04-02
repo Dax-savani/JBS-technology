@@ -2,10 +2,11 @@ import { useTheme } from "@emotion/react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import img1 from "../../assets/images/Careers/Group.png";
+import { useNavigate } from "react-router-dom";
 
 export const CareerCards = () => {
   const theme = useTheme();
-
+  const navigate = useNavigate()
   const data = [
     {
       image: img1,
@@ -61,7 +62,7 @@ export const CareerCards = () => {
           marginY={4}
         >
           {data.map((data) => (
-            <Grid item md={4} sm={6} xs={12}>
+            <Grid item md={4} sm={6} xs={12} onClick={() => navigate("/career_carddata")}>
               <Box
                 bgcolor="white"
                 sx={{
