@@ -1,7 +1,14 @@
 import React from "react";
+import { Services } from "./pages/services/Services";
+import { Careers } from "./pages/careers/Careers";
 
 function App() {
-  return <div>The Application file</div>;
+  return (
+    <>
+      {/* <Services /> */}
+      <Careers />
+    </>
+  );
 }
 
 export default App;
