@@ -3,9 +3,11 @@ const theme = createTheme({
   typography: {
     fontFamily: "Poppins, Arial, sans-serif",
   },
-  pallete: {
+  palette: {
     black: "#000000",
-    primary: "#0086FF",
+    primary: {
+      main: "#0086FF",
+    },
     gray: "rgba(0, 0, 0, 0.50)",
     litePrimary: "rgba(0,134,255,0.5)",
     liteGreen: "rgba(91,212,129,1)",

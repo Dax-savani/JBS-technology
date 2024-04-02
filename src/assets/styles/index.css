@@ -40,3 +40,34 @@ li {
   list-style-type: none;
 }
 
+.fg {
+  animation: slide 3s infinite alternate-reverse linear;
+}
+
+@keyframes slide {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.bradcrumb {
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  animation: run 2s infinite linear alternate-reverse;
+}
+@keyframes run {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 98%;
+  }
+}
