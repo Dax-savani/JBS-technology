@@ -6,7 +6,7 @@ export const TitleAnimation = ({ title }) => {
   const theme = useTheme();
   return (
     <>
-      <Box paddingY={9} align="center">
+      <Box align="center">
         <Box sx={{ fontSize: "35px", fontWeight: "600" }}>{title}</Box>
         <Box sx={{ marginTop: "10px" }}>
           <Box

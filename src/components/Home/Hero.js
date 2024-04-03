@@ -1,15 +1,23 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
-import heroImage from "../../assets/images/home-image/1.png";
+import heroImage from "../../assets/images/home-image/3c.png";
 import { useTheme } from "@emotion/react";
 
 const Hero = () => {
   const theme = useTheme();
   return (
     <>
-      <Container>
-        <Box sx={{ height: "500px" }}>
-          <Grid container sx={{ alignItems: "center", padding: 5 }}>
+      <Container maxWidth="lg">
+        <Box>
+          <Grid
+            container
+            alignItems="center"
+            sx={{
+              alignItems: "center",
+              paddingInline: 10,
+              height: "auto",
+            }}
+          >
             <Grid item md={6}>
               <Box>
                 <Typography
@@ -62,8 +70,10 @@ const Hero = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item md={6}>
-              <img src={heroImage} alt="hero" sx={{ width: "600px" }} />
+            <Grid item md={6} display="flex" justifyContent="center">
+              <Box sx={{ width: { sm: "65%", md: "100%" } }}>
+                <img src={heroImage} alt="hero" />
+              </Box>
             </Grid>
           </Grid>
         </Box>

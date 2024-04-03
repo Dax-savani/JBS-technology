@@ -5,8 +5,8 @@ import smallLogo from "../../assets/images/home-image/Group 370.png";
 
 const WhyUs = () => {
   return (
-    <Container>
-      <Box p={5}>
+    <Container maxWidth="lg">
+      <Box py={5}>
         <Box>
           <Typography
             variant="h3"
@@ -17,8 +17,27 @@ const WhyUs = () => {
         </Box>
         <Grid container spacing={3}>
           <Grid item container spacing={3}>
-            <Grid item container direction="column" md={4} spacing={3}>
-              <Grid item>
+            <Grid
+              item
+              container
+              direction={{ xs: "row", md: "column" }}
+              xs={12}
+              md={4}
+              spacing={3}
+              order={{ xs: 2, md: 1 }}
+            >
+              <Grid
+                item
+                sm={6}
+                md={4}
+                sx={{
+                  cursor: "pointer",
+                  transition: "all 0.5s",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
+                }}
+              >
                 <Paper component={Box} p={3} borderRadius="3">
                   <Box>
                     <img
@@ -37,7 +56,18 @@ const WhyUs = () => {
                   </Typography>
                 </Paper>
               </Grid>
-              <Grid item>
+              <Grid
+                item
+                sm={6}
+                md={4}
+                sx={{
+                  cursor: "pointer",
+                  transition: "all 0.5s",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
+                }}
+              >
                 <Paper component={Box} p={3} borderRadius="3">
                   <Box>
                     <img
@@ -57,14 +87,37 @@ const WhyUs = () => {
                 </Paper>
               </Grid>
             </Grid>
-            <Grid item md={8}>
-              <Box bgcolor="gray" sx={{ width: "100%", height: "100%" }}>
-                {/* <img src={group} alt="group" /> */}
+            <Grid
+              item
+              md={8}
+              xs={12}
+              order={{ xs: 1, md: 2 }}
+              display="flex"
+              justifyContent="center"
+            >
+              <Box
+                sx={{
+                  height: "432px",
+                  width: "68%",
+                }}
+              >
+                <img src={group} alt="group" />
               </Box>
             </Grid>
           </Grid>
           <Grid item container spacing={3}>
-            <Grid item md={4}>
+            <Grid
+              item
+              sm={6}
+              md={4}
+              sx={{
+                cursor: "pointer",
+                transition: "all 0.5s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
               <Paper component={Box} p={3} borderRadius="3">
                 <Box>
                   <img
@@ -82,7 +135,18 @@ const WhyUs = () => {
                 </Typography>
               </Paper>
             </Grid>
-            <Grid item md={4}>
+            <Grid
+              item
+              sm={6}
+              md={4}
+              sx={{
+                cursor: "pointer",
+                transition: "all 0.5s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
               <Paper component={Box} p={3} borderRadius="3">
                 <Box>
                   <img
@@ -100,7 +164,18 @@ const WhyUs = () => {
                 </Typography>
               </Paper>
             </Grid>
-            <Grid item md={4}>
+            <Grid
+              item
+              sm={6}
+              md={4}
+              sx={{
+                cursor: "pointer",
+                transition: "all 0.5s",
+                "&:hover": {
+                  transform: "scale(1.05)",
+                },
+              }}
+            >
               <Paper component={Box} p={3} borderRadius="3">
                 <Box>
                   <img

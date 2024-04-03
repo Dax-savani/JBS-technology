@@ -8,8 +8,8 @@ const MainCources = () => {
 
   return (
     <>
-      <Container>
-        <Box p={5}>
+      <Container maxWidth="lg">
+        <Box py={5}>
           <Box>
             <Typography
               variant="h3"
@@ -27,12 +27,17 @@ const MainCources = () => {
             </Typography>
           </Box>
           <Grid container>
-            <Grid item md={3} p={1}>
+            <Grid item sm={6} lg={3} p={1}>
               <Box
                 sx={{
                   border: `3px dashed ${theme.palette.primary.main}`,
                   padding: 2,
                   borderRadius: 2,
+                  cursor: "pointer",
+                  transition: "all 0.5s",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
                 }}
               >
                 <Box
@@ -63,12 +68,17 @@ const MainCources = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item md={3} p={1}>
+            <Grid item sm={6} lg={3} p={1}>
               <Box
                 sx={{
                   border: `3px dashed ${theme.palette.primary.main}`,
                   padding: 2,
                   borderRadius: 2,
+                  cursor: "pointer",
+                  transition: "all 0.5s",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
                 }}
               >
                 <Box
@@ -99,12 +109,17 @@ const MainCources = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item md={3} p={1}>
+            <Grid item sm={6} lg={3} p={1}>
               <Box
                 sx={{
                   border: `3px dashed ${theme.palette.primary.main}`,
                   padding: 2,
                   borderRadius: 2,
+                  cursor: "pointer",
+                  transition: "all 0.5s",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
                 }}
               >
                 <Box
@@ -135,12 +150,17 @@ const MainCources = () => {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item md={3} p={1}>
+            <Grid item sm={6} lg={3} p={1}>
               <Box
                 sx={{
                   border: `3px dashed ${theme.palette.primary.main}`,
                   padding: 2,
                   borderRadius: 2,
+                  cursor: "pointer",
+                  transition: "all 0.5s",
+                  "&:hover": {
+                    transform: "scale(1.05)",
+                  },
                 }}
               >
                 <Box
