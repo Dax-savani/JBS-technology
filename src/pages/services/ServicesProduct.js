@@ -52,17 +52,20 @@ const ServicesProduct = () => {
           alignItems={"center"}
           justifyContent={"center"}
           marginY={4}
-          
         >
           {data.map((val) => (
-            <Grid item md={4} sm={6} >
+            <Grid item md={4} sm={6}>
               <Box
                 bgcolor="white"
                 sx={{
                   padding: "25px 15px",
                   borderRadius: "15px",
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
-                  cursor:"pointer"
+                  cursor: "pointer",
+                  transition:"all 0.1s",
+                  "&:hover": {
+                   transform:"translateY(-10px)"
+                  },
                 }}
               >
                 <Box sx={{ height: "79px", width: "72px", padding: "10px" }}>

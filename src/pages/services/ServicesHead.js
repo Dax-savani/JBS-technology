@@ -10,7 +10,7 @@ const ServiceHead = () => {
     <Container maxWidth="lg">
       <Grid>
         <Grid item lg={9} xs={11} sx={{ py: { xs: 8, md: 13 } }}>
-          <Box className="heading" sx={{fontSize :{md:"48px",xs:"32px"} }}>
+          <Box className="heading" sx={{fontSize :{md:"48px",xs:"32px"},lineHeight:"1.2" }}>
             <Typography variant="div" fontWeight="bold">
               We design & build innovative products focused on{" "}
               <Typography variant="span" color={theme.palette.primary.main}>

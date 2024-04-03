@@ -6,28 +6,34 @@ export const TitleAnimation = ({title}) => {
   const theme = useTheme();
   return (
     <>
-        <Box
-          paddingY={9}
-          align="center"
-        
-        >
-          <Box sx={{ fontSize: "35px", fontWeight: "600" }}>{title}</Box>
-          <Box sx={{ marginTop: "10px" }}>
-            <Box
+      <Box align="center">
+        <Box sx={{ fontSize: "35px", fontWeight: "600" }}>{title}</Box>
+        <Box sx={{ marginTop: "10px" }}>
+          <Box
+            sx={{
+              height: "3px",
+              width: "100px",
+              backgroundColor: "#b3dbff",
+              position: "relative",
+            }}
+          >
+            <Typography
               sx={{
-                height: "3px",
-                width: "100px",
-                backgroundColor: "#b3dbff",
-                position: "relative",
+                height: "13px",
+                width: "13px",
+                borderRadius: "50%",
+                position: "absolute",
+                top: "50%",
+                left: "0%",
+                transform: "translateY(-50%)",
+                animation: "run 2s infinite linear alternate-reverse",
+                
               }}
-            >
-              <Typography
-                className="bradcrumb"
-                bgcolor={theme.palette.primary.main}
-              ></Typography>
-            </Box>
+              bgcolor={theme.palette.primary.main}
+            ></Typography>
           </Box>
         </Box>
+      </Box>
     </>
   );
 };
