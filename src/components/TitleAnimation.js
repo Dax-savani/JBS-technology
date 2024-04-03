@@ -1,8 +1,8 @@
 import { useTheme } from "@emotion/react";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 
-export const TitleAnimation = ({ title }) => {
+export const TitleAnimation = ({title}) => {
   const theme = useTheme();
   return (
     <>
@@ -18,7 +18,17 @@ export const TitleAnimation = ({ title }) => {
             }}
           >
             <Typography
-              className="bradcrumb"
+              sx={{
+                height: "13px",
+                width: "13px",
+                borderRadius: "50%",
+                position: "absolute",
+                top: "50%",
+                left: "0%",
+                transform: "translateY(-50%)",
+                animation: "run 2s infinite linear alternate-reverse",
+
+              }}
               bgcolor={theme.palette.primary.main}
             ></Typography>
           </Box>
