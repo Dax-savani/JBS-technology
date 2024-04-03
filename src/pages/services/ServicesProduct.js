@@ -45,7 +45,7 @@ const ServicesProduct = () => {
   ];
   return (
     <>
-      <Container>
+      <Container maxWidth="lg">
         <Grid
           container
           spacing={3}
@@ -62,9 +62,9 @@ const ServicesProduct = () => {
                   borderRadius: "15px",
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
                   cursor: "pointer",
-                  transition:"all 0.1s",
+                  transition: "all 0.1s",
                   "&:hover": {
-                   transform:"translateY(-10px)"
+                    transform: "translateY(-10px)",
                   },
                 }}
               >

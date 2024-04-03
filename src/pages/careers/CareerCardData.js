@@ -30,7 +30,7 @@ export const CareerCardData = () => {
         <TitleAnimation title={careerData.heading} />
       </Box>
 
-      <Container>
+      <Container maxWidth="lg">
         <Breadcrumbs>
           <Link underline="none" href="" color={theme.palette.gray}>
             Career
@@ -48,13 +48,17 @@ export const CareerCardData = () => {
           alignItems="center"
         >
           <Grid md={4} padding={2}>
-            <img src={careerData.image} alt="react" style={{ objectFit: "unset" }} />
+            <img
+              src={careerData.image}
+              alt="react"
+              style={{ objectFit: "unset" }}
+            />
           </Grid>
           <Grid
             md={8}
             fontSize={14}
             color={theme.palette.black.main}
-            sx={{padding :{ md :"15px"}}}
+            sx={{ padding: { md: "15px" } }}
           >
             <Typography variant="p">
               We are looking for a skilled react.js developer to join our

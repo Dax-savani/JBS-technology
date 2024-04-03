@@ -59,10 +59,10 @@ const data = [
 export const CareerCards = () => {
   const theme = useTheme();
   const navigate = useNavigate()
-  // onClick={() => navigate("/career_carddata")}
+  // onClick={() => navigate("/career_carddata")}.
   return (
     <>
-      <Container>
+      <Container maxWidth="lg">
         <Grid
           container
           spacing={3}

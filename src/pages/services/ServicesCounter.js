@@ -6,28 +6,55 @@ import CountUp from "react-countup";
 export const ServicesCounter = () => {
   const theme = useTheme();
   const [counterState, setCounterstate] = useState(false);
-  const isContainerLarge = useMediaQuery("(min-width: 300px)");
-  console.log("isContainerLarge", isContainerLarge);
   return (
     <>
-      <Container>
+      <Container maxWidth ="lg">
         <ScrollTrigger
           onEnter={() => setCounterstate(true)}
-          // onExit={() => setCounterstate(false)}
         >
-          <Grid container sx={{ py: { xs: 5, md: 5 }, flexWrap: "wrap" }}>
+          <Grid container sx={{ margin: "20px 0px" }}>
             <Grid
               item
               display="flex"
               justifyContent="center"
               alignItems="center"
-              xs={4}
+              xs={6}
+              sm={6}
+              md={3}
+              my={3}
+            >
+              <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
+                {counterState && (
+                  <CountUp start={0} end={60} duration={1}></CountUp>
+                )}
+                <Typography variant="span" color={theme.palette.primary.main}>
+                  +
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  marginLeft: 1,
+                  fontSize: { sm: "12px", xs: "11px" },
+                  lineHeight: "15px",
+                }}
+              >
+                Happy<Box>Happy Clients</Box>
+              </Box>
+            </Grid>
+            <Grid
+              item
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              xs={6}
+              sm={6}
+              md={3}
+              my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
                 {counterState && (
                   <CountUp start={0} end={80} duration={1}></CountUp>
                 )}
-
                 <Typography variant="span" color={theme.palette.primary.main}>
                   +
                 </Typography>
@@ -47,13 +74,15 @@ export const ServicesCounter = () => {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              xs={4}
+              xs={6}
+              sm={6}
+              md={3}
+              my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
                 {counterState && (
                   <CountUp start={0} end={40} duration={1}></CountUp>
                 )}
-
                 <Typography variant="span" color={theme.palette.primary.main}>
                   +
                 </Typography>
@@ -73,7 +102,10 @@ export const ServicesCounter = () => {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              xs={4}
+              xs={6}
+              sm={6}
+              md={3}
+              my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
                 {counterState && (
@@ -84,7 +116,6 @@ export const ServicesCounter = () => {
                     duration={1}
                   ></CountUp>
                 )}
-
                 <Typography variant="span" color={theme.palette.primary.main}>
                   +
                 </Typography>
