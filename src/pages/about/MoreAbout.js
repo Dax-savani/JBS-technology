@@ -8,7 +8,7 @@ function MoreAbout() {
   return (
     <>
       <div className="MoreAboutSection">
-        <Container>
+        <Container maxWidth="lg">
           <ServicesCounter />
           <Grid
             container

@@ -7,7 +7,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 function Location() {
   return (
     <>
-      <Container>
+      <Container maxWidth="lg">
         <Grid container spacing={3} justifyContent="center" my={8}>
           <Grid item xs={12} sm={6} md={4}>
             <Box className="contact-info-box bg-light p-4">
@@ -19,7 +19,7 @@ function Location() {
               >
                 Mail Here
               </Typography>
-              <Typography variant="body1" sx={{color:"#6c757d"}}>
+              <Typography variant="body1" sx={{ color: "#6c757d" }}>
                 contact@ghanshyamdigital.com
               </Typography>
             </Box>
@@ -34,7 +34,7 @@ function Location() {
               >
                 Visit Here
               </Typography>
-              <Typography variant="body1" sx={{color:"#6c757d"}}>
+              <Typography variant="body1" sx={{ color: "#6c757d" }}>
                 107, 1st Floor, 21st century business centre, Nr.World trade
                 centre, Ring Road, Surat - 395003, Gujarat, IN
               </Typography>
@@ -50,7 +50,7 @@ function Location() {
               >
                 Call Here
               </Typography>
-              <Typography variant="body1" sx={{color:"#6c757d"}}>
+              <Typography variant="body1" sx={{ color: "#6c757d" }}>
                 +91 98752 63080
               </Typography>
             </Box>

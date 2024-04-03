@@ -43,7 +43,7 @@ function ContactUs() {
         <TitleAnimation title={`Contact Us`} />
       </div>
       <Box bgcolor={theme.palette.backgroundLiteGrey}>
-        <Container>
+        <Container maxWidth="lg">
           <Grid container py={5} spacing={2}>
             <Grid
               item

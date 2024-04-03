@@ -67,7 +67,7 @@ function Ceo() {
   const theme = useTheme();
   return (
     <>
-      <Container>
+      <Container maxWidth="lg">
         <Grid container xl={12}>
           <Grid item lg={8}>
             <Typography

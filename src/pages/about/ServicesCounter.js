@@ -5,15 +5,11 @@ import ScrollTrigger from "react-scroll-trigger";
 import CountUp from "react-countup";
 export const ServicesCounter = () => {
   const theme = useTheme();
-  const [counterState, setCounterstate] = useState(true);
-  const isContainerLarge = useMediaQuery("(min-width: 300px)");
+  const [counterState, setCounterstate] = useState(false);
   return (
     <>
       <Container>
-        <ScrollTrigger
-          onEnter={() => setCounterstate(true)}
-          onExit={() => setCounterstate(false)}
-        >
+        <ScrollTrigger onEnter={() => setCounterstate(true)}>
           <Grid container sx={{ margin: "20px 0px" }}>
             <Grid
               item
@@ -82,7 +78,9 @@ export const ServicesCounter = () => {
               my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
-                <CountUp start={0} end={40} duration={1}></CountUp>
+                {counterState && (
+                  <CountUp start={0} end={40} duration={1}></CountUp>
+                )}
                 <Typography variant="span" color={theme.palette.primary.main}>
                   +
                 </Typography>
@@ -108,12 +106,14 @@ export const ServicesCounter = () => {
               my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
-                <CountUp
-                  start={0}
-                  end={4.9}
-                  decimals={1}
-                  duration={1}
-                ></CountUp>
+                {counterState && (
+                  <CountUp
+                    start={0}
+                    end={4.9}
+                    decimals={1}
+                    duration={1}
+                  ></CountUp>
+                )}
                 <Typography variant="span" color={theme.palette.primary.main}>
                   +
                 </Typography>
