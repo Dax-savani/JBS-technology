@@ -18,7 +18,7 @@ function Herosection() {
             <div>
               <Typography
                 variant={isSmallScreen ? "h4" : "h2"}
-                color={theme.pallete.primary}
+                color={theme.palette.primary.main}
                 gutterBottom
               >
                 Our Team <br /> Is Your Team

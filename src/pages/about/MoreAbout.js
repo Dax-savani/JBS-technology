@@ -33,7 +33,7 @@ function MoreAbout() {
                 </Typography>
                 <Typography
                   sx={{ margin: "10px 0px" }}
-                  color={theme.pallete.gray}
+                  color={theme.palette.gray}
                 >
                   We have been a creative and competitive web developing company
                   since 2019 and been delivering great results and projects
@@ -56,7 +56,7 @@ function MoreAbout() {
                 </Typography>
                 <Typography
                   sx={{ margin: "10px 0px" }}
-                  color={theme.pallete.gray}
+                  color={theme.palette.gray}
                 >
                   Our mission is to provide and create the projects as per ones
                   vision with the utmost code quality forged with Passion and
@@ -78,7 +78,7 @@ function MoreAbout() {
                 </Typography>
                 <Typography
                   sx={{ margin: "10px 0px" }}
-                  color={theme.pallete.gray}
+                  color={theme.palette.gray}
                 >
                   An entrepreneur firm with clear vision and passion for the a
                   greater success for the company and the clients.

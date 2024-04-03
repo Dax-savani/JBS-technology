@@ -80,7 +80,7 @@ function Ceo() {
               variant="body1"
               sx={{ fontSize: "19.5px" }}
               my={2}
-              color={theme.pallete.gray}
+              color={theme.palette.gray}
             >
               Our founding team started their journeys in the corporate world.
               They then moved on to build their own startups before coming
@@ -115,7 +115,7 @@ function Ceo() {
               variant="body1"
               sx={{ fontSize: "19.5px" }}
               my={2}
-              color={theme.pallete.gray}
+              color={theme.palette.gray}
             >
               We have a rigorous screening process to identify the best talent,
               from inception, UXUI design, and development. We are always on the
@@ -141,7 +141,7 @@ function Ceo() {
         </Box>
         <Grid container justifyContent="start" spacing={3} py={3}>
           {staff.map((item) => (
-            <Grid item lg={3} sm={6} xs={12}>
+            <Grid item lg={3} sm={6} x s={12}>
               <CEOBox
                 image={item.img}
                 name={item.name}

@@ -14,7 +14,7 @@ function CEOBox({ image, name, position }) {
         >
           {name}
         </Typography>
-        <Typography variant="body2" color={theme.pallete.gray}>{position}</Typography>
+        <Typography variant="body2" color={theme.palette.gray}>{position}</Typography>
       </CardContent>
     </Card>
   );
