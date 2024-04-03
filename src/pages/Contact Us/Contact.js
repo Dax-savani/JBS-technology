@@ -6,7 +6,6 @@ function Contact() {
   return (
     <>
       <ContactUs />
-      
       <Location />
     </>
   );

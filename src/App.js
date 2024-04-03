@@ -5,8 +5,8 @@ import Contact from "./pages/Contact Us/Contact";
 function App() {
   return (
     <>
-      {/* <About /> */}
-      <Contact />
+      <About />
+      {/* <Contact /> */}
     </>
   );
 }

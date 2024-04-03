@@ -14,17 +14,44 @@ export const ServicesCounter = () => {
           onEnter={() => setCounterstate(true)}
           onExit={() => setCounterstate(false)}
         >
-          <Grid
-            container
-            sx={{ margin: "20px 0px" }}
-            // sx={{ py: { xs: 5, md: 5 }, flexWrap: "wrap" }}
-          >
+          <Grid container sx={{ margin: "20px 0px" }}>
             <Grid
               item
               display="flex"
               justifyContent="center"
               alignItems="center"
-              xs={4}
+              xs={6}
+              sm={6}
+              md={3}
+              my={3}
+            >
+              <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
+                {counterState && (
+                  <CountUp start={0} end={60} duration={1}></CountUp>
+                )}
+                <Typography variant="span" color={theme.palette.primary.main}>
+                  +
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  marginLeft: 1,
+                  fontSize: { sm: "12px", xs: "11px" },
+                  lineHeight: "15px",
+                }}
+              >
+                Happy<Box>Happy Clients</Box>
+              </Box>
+            </Grid>
+            <Grid
+              item
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              xs={6}
+              sm={6}
+              md={3}
+              my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
                 {counterState && (
@@ -49,7 +76,10 @@ export const ServicesCounter = () => {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              xs={4}
+              xs={6}
+              sm={6}
+              md={3}
+              my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
                 <CountUp start={0} end={40} duration={1}></CountUp>
@@ -72,7 +102,10 @@ export const ServicesCounter = () => {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              xs={4}
+              xs={6}
+              sm={6}
+              md={3}
+              my={3}
             >
               <Box sx={{ fontSize: { xs: "32px", sm: "48px" } }}>
                 <CountUp
