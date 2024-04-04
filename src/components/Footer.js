@@ -6,6 +6,10 @@ import footerLogo from "../assets/images/Footer/footerlogo.png";
 import ModeOfTravelOutlinedIcon from "@mui/icons-material/ModeOfTravelOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const Footer = () => {
   const theme = useTheme();
   return (
@@ -13,23 +17,27 @@ const Footer = () => {
       <Box
         sx={{
           backgroundColor: theme.palette.footerBlue,
-          backgroundImage: `url(${footerBack})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          mt: "40px",
         }}
       >
-        <Container maxWidth="lg">
+        <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
           <Grid
             container
             color={theme.palette.common.white}
-            sx={{padding: "10px"}}
+            sx={{ padding: "10px" }}
           >
-            <Grid item xs={12} sm={6} md={4} sx={{display: "flex",justifyContent: "center"}}>
-              <Box sx={{ height: "281px", width: "281px", padding: "38px" }}>
-                <img src={footerLogo} alt="logo" />
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              sx={{ display: "flex", justifyContent: "center" }}
+            >
+              <Box sx={{ maxHeight: "270px", maxWidth: "270px", padding: "32px" }}>
+                <img src={footerLogo} alt="logo" style={{objectFit: "contain"}}/>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={6} md={2} sx={{py: "25px"}}>
+            <Grid item xs={12} sm={6} md={2} sx={{ py: "25px" }}>
               <Typography
                 sx={{
                   letterSpacing: "0.7px",
@@ -109,7 +117,7 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={6} md={3} sx={{py: "25px"}}>
+            <Grid item xs={12} sm={6} md={3} sx={{ py: "25px" }}>
               <Typography
                 sx={{
                   letterSpacing: "0.7px",
@@ -156,7 +164,7 @@ const Footer = () => {
                 </Link>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={6} md={3} sx={{py: "25px"}}>
+            <Grid item xs={12} sm={6} md={3} sx={{ py: "25px" }}>
               <Typography
                 sx={{
                   letterSpacing: "0.7px",
@@ -216,10 +224,48 @@ const Footer = () => {
                   />
                   Phone : 79844 43901
                 </Link>
+                <Box sx={{ display: "flex", alignItems: "center", mt: "5px" }}>
+                  <Link>
+                    <FacebookOutlinedIcon
+                      sx={{
+                        fontSize: "30px",
+                        color: theme.palette.footerGray,
+                        mx: "2px",
+                      }}
+                    />
+                  </Link>
+                  <Link>
+                    <TwitterIcon
+                      sx={{
+                        fontSize: "30px",
+                        color: theme.palette.footerGray,
+                        mx: "2px",
+                      }}
+                    />
+                  </Link>
+                  <Link>
+                    <InstagramIcon
+                      sx={{
+                        fontSize: "30px",
+                        color: theme.palette.footerGray,
+                        mx: "2px",
+                      }}
+                    />
+                  </Link>
+                  <Link>
+                    <LinkedInIcon
+                      sx={{
+                        fontSize: "30px",
+                        color: theme.palette.footerGray,
+                        mx: "2px",
+                      }}
+                    />
+                  </Link>
+                </Box>
               </Box>
             </Grid>
           </Grid>
-        </Container>
+        </Box>
       </Box>
     </>
   );

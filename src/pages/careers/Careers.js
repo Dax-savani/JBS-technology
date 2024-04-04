@@ -10,15 +10,13 @@ export const Careers = () => {
   return (
     <>
       <Box bgcolor={theme.palette.backgroundLiteGrey}>
-        <Box bgcolor={"white"} paddingY={9}>
+        <Box bgcolor={"white"} paddingY={9} mt={"40px"}>
           <TitleAnimation title="Openings" />
         </Box>
-        <Box>
+        <Box mt={"40px"}>
           <CareerCards />
         </Box>
-        {/* <Box>
-        <CareerCardData />
-        </Box> */}
+        
       </Box>
     </>
   );

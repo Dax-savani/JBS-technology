@@ -58,11 +58,10 @@ const data = [
 ];
 export const CareerCards = () => {
   const theme = useTheme();
-  const navigate = useNavigate();
-  // onClick={() => navigate("/career_carddata")}.
+  const navigate = useNavigate()
   return (
     <>
-      <Container maxWidth="lg">
+      <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
         <Grid
           container
           spacing={3}
@@ -70,8 +69,9 @@ export const CareerCards = () => {
           justifyContent={"center"}
           marginY={4}
         >
-          {data.map((data) => (
+          {data.map((data, ind) => (
             <Grid
+              key={ind}
               item
               md={4}
               sm={6}
@@ -85,28 +85,41 @@ export const CareerCards = () => {
                   borderRadius: "15px",
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
                   cursor: "pointer",
-                  transition: "all 0.1s",
+                  transition: "0.5s",
                   "&:hover": {
                     transform: "translateY(-10px)",
                   },
                 }}
               >
-                <Box sx={{ height: "100px", width: "100px" }}>
+                <Box
+                  sx={{
+                    height: { xs: "100px", xl: "150px" },
+                    width: { xs: "100px", xl: "150px" },
+                  }}
+                >
                   <img
                     src={data.image}
                     alt="dg"
                     style={{ objectFit: "contain" }}
                   />
                 </Box>
-                <Box sx={{ marginTop: "10px" }}>
-                  <h3>{data.heading}</h3>
-                </Box>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    marginTop: "10px",
+                    fontWeight: "700",
+                    fontSize: { xl: "30px" },
+                  }}
+                >
+                  {data.heading}
+                </Typography>
                 <Typography
                   variant="body2"
                   sx={{
                     marginTop: "8px",
                     color: `${theme.palette.gray}`,
-                    fontSize: "12px",
+                    fontSize: { xs: "13px", xl: "17px" },
+                    letterSpacing: "0.5px",
                   }}
                 >
                   {data.descripition1}
@@ -115,7 +128,8 @@ export const CareerCards = () => {
                   variant="body2"
                   sx={{
                     color: `${theme.palette.gray}`,
-                    fontSize: "12px",
+                    fontSize: { xs: "13px", xl: "17px" },
+                    letterSpacing: "0.5px",
                   }}
                 >
                   {data.descripition2}
@@ -124,7 +138,8 @@ export const CareerCards = () => {
                   variant="body2"
                   sx={{
                     color: `${theme.palette.gray}`,
-                    fontSize: "12px",
+                    fontSize: { xs: "13px", xl: "17px" },
+                    letterSpacing: "0.5px",
                   }}
                 >
                   {data.descripition3}
@@ -133,7 +148,7 @@ export const CareerCards = () => {
             </Grid>
           ))}
         </Grid>
-      </Container>
+      </Box>
     </>
   );
 };

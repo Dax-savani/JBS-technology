@@ -43,8 +43,11 @@ const Portfolio = () => {
   ];
   return (
     <>
-      <Box bgcolor={theme.palette.backgroundLiteGrey}>
-        <Container maxWidth="lg">
+      <Box bgcolor={theme.palette.backgroundLiteGrey} sx={{ mt: "40px" }}>
+        <Box
+          sx={{ width: "100%" }}
+          px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
+        >
           <Grid>
             <Grid item lg={9} xs={11} sx={{ py: { xs: 8, md: 13 } }}>
               <Box
@@ -66,8 +69,9 @@ const Portfolio = () => {
               </Box>
             </Grid>
           </Grid>
-        </Container>
+        </Box>
       </Box>
+
       {portfolioItems?.map((item, index) => (
         <Box
           key={item.id}
@@ -80,7 +84,7 @@ const Portfolio = () => {
                 {index % 2 === 0 && (
                   <Grid
                     item
-                    sx={{ order: {md:0} }}
+                    sx={{ order: { md: 0 } }}
                     xs={12}
                     md={6}
                     display={"flex"}
@@ -100,7 +104,7 @@ const Portfolio = () => {
                   </Grid>
                 )}
 
-                <Grid item xs={12} md={6} sx={{order: {md:0,xs:1}}}>
+                <Grid item xs={12} md={6} sx={{ order: { md: 0, xs: 1 } }}>
                   <Box sx={{ width: { md: "270px", xs: "200px" } }}>
                     <img src={item.logo} alt="logo" />
                   </Box>
@@ -151,7 +155,7 @@ const Portfolio = () => {
                 {index % 2 !== 0 && (
                   <Grid
                     item
-                    sx={{ order: {md:0} }}
+                    sx={{ order: { md: 0 } }}
                     xs={12}
                     md={6}
                     display={"flex"}
