@@ -16,7 +16,6 @@ import staff6 from "../../assets/images/about/staff-6.jpg";
 import staff7 from "../../assets/images/about/staff-7.jpg";
 import staff8 from "../../assets/images/about/staff-8.jpg";
 import React from "react";
-
 function IntroduceSection() {
   const theme = useTheme();
   return (
@@ -194,7 +193,7 @@ function IntroduceSection() {
                 We regularly organize all-hand events to meet as a team and do
                 fun stuff together. We also lunch together or go out to listen
                 to our favourite music (random fact: Many of our Altarions play
-                in a band 🎸 🥁)
+                in a band :guitar: :drum_with_drumsticks:)
               </Typography>
             </Grid>
           </Grid>
@@ -255,5 +254,4 @@ function IntroduceSection() {
     </>
   );
 }
-
 export default IntroduceSection;

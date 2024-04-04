@@ -4,13 +4,8 @@ import { useTheme } from "@emotion/react";
 import nectarImg from "../../assets/images/portfolio/nectar-2 (1) 1.png";
 import nectarlogo from "../../assets/images/portfolio/Group 1 1.png";
 import nectarlogo2 from "../../assets/images/portfolio/Group 1 1 (1).png";
-
 const Portfolio = () => {
-
-
   const theme = useTheme();
-
-
   const portfolioItems = [
     {
       id: 1,
@@ -71,7 +66,6 @@ const Portfolio = () => {
           </Grid>
         </Box>
       </Box>
-
       {portfolioItems?.map((item, index) => (
         <Box
           key={item.id}
@@ -103,7 +97,6 @@ const Portfolio = () => {
                     </Box>
                   </Grid>
                 )}
-
                 <Grid item xs={12} md={6} sx={{ order: { md: 0, xs: 1 } }}>
                   <Box sx={{ width: { md: "270px", xs: "200px" } }}>
                     <img src={item.logo} alt="logo" />
@@ -151,7 +144,6 @@ const Portfolio = () => {
                     View more
                   </Button>
                 </Grid>
-
                 {index % 2 !== 0 && (
                   <Grid
                     item
@@ -182,5 +174,4 @@ const Portfolio = () => {
     </>
   );
 };
-
 export default Portfolio;

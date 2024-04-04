@@ -33,8 +33,14 @@ const Footer = () => {
               md={4}
               sx={{ display: "flex", justifyContent: "center" }}
             >
-              <Box sx={{ maxHeight: "270px", maxWidth: "270px", padding: "32px" }}>
-                <img src={footerLogo} alt="logo" style={{objectFit: "contain"}}/>
+              <Box
+                sx={{ maxHeight: "270px", maxWidth: "270px", padding: "32px" }}
+              >
+                <img
+                  src={footerLogo}
+                  alt="logo"
+                  style={{ objectFit: "contain" }}
+                />
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={2} sx={{ py: "25px" }}>
@@ -270,5 +276,4 @@ const Footer = () => {
     </>
   );
 };
-
 export default Footer;
