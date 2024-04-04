@@ -2,7 +2,7 @@ import { useTheme } from "@emotion/react";
 import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 
-export const TitleAnimation = ({title}) => {
+export const TitleAnimation = ({ title }) => {
   const theme = useTheme();
   return (
     <>
@@ -27,7 +27,6 @@ export const TitleAnimation = ({title}) => {
                 left: "0%",
                 transform: "translateY(-50%)",
                 animation: "run 2s infinite linear alternate-reverse",
-
               }}
               bgcolor={theme.palette.primary.main}
             ></Typography>

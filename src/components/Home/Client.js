@@ -3,7 +3,6 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-// import companyLogo from "../../assets/images/home-image/bmw.png";
 import company1 from "../../assets/images/home-image/company1.svg";
 import company2 from "../../assets/images/home-image/company2.svg";
 import company3 from "../../assets/images/home-image/company3.png";
@@ -54,7 +53,11 @@ const Client = () => {
 
   return (
     <>
-      <Container maxWidth="lg">
+      <Box
+        mt="40px"
+        px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
+        sx={{ mt: "40px" }}
+      >
         <Box py={5}>
           <Typography
             variant="h3"
@@ -70,8 +73,8 @@ const Client = () => {
           <OwlCarousel className="owl-theme" {...options}>
             <div className="item">
               <Grid container spacing={7}>
-                {companyImgArray.map((image) => (
-                  <Grid item xs={6} sm={4} md={3} lg={2}>
+                {companyImgArray.map((image, index) => (
+                  <Grid item xs={6} sm={4} md={3} lg={2} key={index}>
                     <img
                       src={image}
                       alt="company"
@@ -83,7 +86,7 @@ const Client = () => {
             </div>
           </OwlCarousel>
         </Box>
-      </Container>
+      </Box>
     </>
   );
 };

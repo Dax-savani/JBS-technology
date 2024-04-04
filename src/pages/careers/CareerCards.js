@@ -2,8 +2,8 @@ import { useTheme } from "@emotion/react";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import img1 from "../../assets/images/Careers/new.webp";
-import node from "../../assets/images/Careers/node-js-icon.png"
-import flutter from "../../assets/images/Careers/Flutter_Featured_Logo.webp"
+import node from "../../assets/images/Careers/node-js-icon.png";
+import flutter from "../../assets/images/Careers/Flutter_Featured_Logo.webp";
 import { useNavigate } from "react-router-dom";
 
 const data = [
@@ -13,7 +13,7 @@ const data = [
     descripition1: "Experience: 2 ",
     descripition2: "No of Openings: 1 ",
     descripition3: "Location: Surat, Gujarat.",
-    id:1
+    id: 1,
   },
   {
     image: node,
@@ -21,7 +21,7 @@ const data = [
     descripition1: "Experience: 2 ",
     descripition2: "No of Openings: 1 ",
     descripition3: "Location: Surat, Gujarat.",
-    id:2
+    id: 2,
   },
   {
     image: flutter,
@@ -29,7 +29,7 @@ const data = [
     descripition1: "Experience: 2 ",
     descripition2: "No of Openings: 1 ",
     descripition3: "Location: Surat, Gujarat.",
-    id:3
+    id: 3,
   },
   {
     image: img1,
@@ -37,7 +37,7 @@ const data = [
     descripition1: "Experience: 2 ",
     descripition2: "No of Openings: 1 ",
     descripition3: "Location: Surat, Gujarat.",
-    id:4
+    id: 4,
   },
   {
     image: img1,
@@ -45,7 +45,7 @@ const data = [
     descripition1: "Experience: 2 ",
     descripition2: "No of Openings: 1 ",
     descripition3: "Location: Surat, Gujarat.",
-    id:5
+    id: 5,
   },
   {
     image: img1,
@@ -53,12 +53,12 @@ const data = [
     descripition1: "Experience: 2 ",
     descripition2: "No of Openings: 1 ",
     descripition3: "Location: Surat, Gujarat.",
-    id:6
+    id: 6,
   },
 ];
 export const CareerCards = () => {
   const theme = useTheme();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   // onClick={() => navigate("/career_carddata")}.
   return (
     <>
@@ -137,6 +137,5 @@ export const CareerCards = () => {
     </>
   );
 };
-
 
 export { data };

@@ -16,10 +16,12 @@ const MileStone = () => {
           color: "#fff",
           background: `linear-gradient(rgba(0, 51, 97, 0.6), rgba(0, 0, 0, 0.9)), url(${keyboardImg}) no-repeat fixed`,
           backgroundSize: "cover",
+          py: "70px",
+          mt: "40px",
         }}
       >
         <TitleAnimation title="Milestones Achieved So Far" />
-        <Typography vaiant="body1" paddingY={3}>
+        <Typography vaiant="body1" paddingY={6}>
           Smiles delivered by our team all over the world
         </Typography>
         <ScrollTrigger

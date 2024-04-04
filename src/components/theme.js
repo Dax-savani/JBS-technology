@@ -5,7 +5,7 @@ const theme = createTheme({
   },
   palette: {
     black: {
-      main:"#000"
+      main: "#000",
     },
     primary: {
       main: "#0086FF",
@@ -18,7 +18,7 @@ const theme = createTheme({
     darkGray: "rgba(62,62,62,1)",
     backgroundLiteGrey: "#FAFAFA",
     footerWhite: "rgba(255,255,255,1)",
-    footerBlue: "#003361"
+    footerBlue: "#003361",
   },
 });
 export default theme;
