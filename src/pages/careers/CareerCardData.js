@@ -30,13 +30,13 @@ export const CareerCardData = () => {
         <TitleAnimation title={careerData.heading} />
       </Box>
 
-      <Container maxWidth="lg">
+      <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
         <Box mt={"40px"}>
           <Breadcrumbs>
             <Link
               underline="none"
               href=""
-              sx={{ fontSize: { xs: "13px", xl: "17px" } }}
+              sx={{ fontSize: { xs: "14px", xl: "17px" } }}
               color={theme.palette.gray}
             >
               Career
@@ -44,7 +44,7 @@ export const CareerCardData = () => {
             <Link
               underline="none"
               href=""
-              sx={{ fontSize: { xs: "13px", xl: "17px" } }}
+              sx={{ fontSize: { xs: "14px", xl: "17px" } }}
             >
               {careerData.heading}
             </Link>
@@ -70,7 +70,7 @@ export const CareerCardData = () => {
               color={theme.palette.black.main}
               sx={{
                 padding: { md: "15px" },
-                fontSize: { xs: "13px", xl: "17px" },
+                fontSize: { xs: "14px", xl: "17px" },
                 lineHeight: { lg: "20px", xl: "30px" },
               }}
             >
@@ -250,7 +250,7 @@ export const CareerCardData = () => {
             </Typography>
           </Box>
         </Box>
-      </Container>
+      </Box>
     </>
   );
 };
