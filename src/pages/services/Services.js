@@ -9,13 +9,13 @@ export const Services = () => {
   return (
     <>
       <Box bgcolor={theme.palette.backgroundLiteGrey}>
-        <Box>
+        <Box mt={"40px"} >
           <ServiceHead />
         </Box>
         <Box bgcolor="white">
           <ServicesCounter />
         </Box>
-        <Box>
+        <Box mt={"40px"}>
           <ServicesProduct />
         </Box>
       </Box>

@@ -159,7 +159,6 @@ const Header = () => {
                 ))}
               </Box>
             </Box>
-          </Box>
         </Toolbar>
       </AppBar>
     </>
