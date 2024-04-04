@@ -6,6 +6,9 @@ import CountUp from "react-countup";
 export const ServicesCounter = () => {
   const theme = useTheme();
   const [counterState, setCounterstate] = useState(false);
+
+
+  // const servicesCoun
   return (
     <>
       <Container maxWidth ="lg">
@@ -38,7 +41,7 @@ export const ServicesCounter = () => {
                   lineHeight: "15px",
                 }}
               >
-                Happy<Box>Happy Clients</Box>
+                <Box>Happy Clients</Box>
               </Box>
             </Grid>
             <Grid
