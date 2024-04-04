@@ -87,7 +87,7 @@ const Client = () => {
           </OwlCarousel>
         </Box>
       </Box>
-    </>
+      </>
   );
 };
 
