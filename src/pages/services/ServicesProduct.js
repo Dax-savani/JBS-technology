@@ -45,7 +45,7 @@ const ServicesProduct = () => {
   ];
   return (
     <>
-      <Container maxWidth="lg">
+      <Container>
         <Grid
           container
           spacing={3}
@@ -62,7 +62,7 @@ const ServicesProduct = () => {
                   borderRadius: "15px",
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
                   cursor: "pointer",
-                  transition: "all 0.1s",
+                  transition: " 0.5s",
                   "&:hover": {
                     transform: "translateY(-10px)",
                   },
@@ -71,15 +71,16 @@ const ServicesProduct = () => {
                 <Box sx={{ height: "79px", width: "72px", padding: "10px" }}>
                   <img src={val.image} alt={val.heading} />
                 </Box>
-                <Box sx={{ marginTop: "10px" }}>
-                  <h3>{val.heading}</h3>
-                </Box>
+                <Typography variant="h5" sx={{ marginTop: "10px", fontWeight:"700" ,fontSize:{xl:"30px"}}}>
+                  {val.heading}
+                </Typography>
                 <Typography
                   variant="body2"
                   sx={{
                     marginTop: "8px",
                     color: `${theme.palette.gray}`,
-                    fontSize: "12px",
+                    fontSize: {xs : "13px", xl:"18px"},
+                    letterSpacing: "0.5px",
                   }}
                 >
                   {val.descripation}

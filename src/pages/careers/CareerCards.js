@@ -62,7 +62,7 @@ export const CareerCards = () => {
   // onClick={() => navigate("/career_carddata")}.
   return (
     <>
-      <Container maxWidth="lg">
+      <Container >
         <Grid
           container
           spacing={3}
@@ -85,7 +85,7 @@ export const CareerCards = () => {
                   borderRadius: "15px",
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
                   cursor: "pointer",
-                  transition: "all 0.1s",
+                  transition: "0.5s",
                   "&:hover": {
                     transform: "translateY(-10px)",
                   },

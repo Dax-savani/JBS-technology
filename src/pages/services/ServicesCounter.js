@@ -8,10 +8,8 @@ export const ServicesCounter = () => {
   const [counterState, setCounterstate] = useState(false);
   return (
     <>
-      <Container maxWidth ="lg">
-        <ScrollTrigger
-          onEnter={() => setCounterstate(true)}
-        >
+      <Container>
+        <ScrollTrigger onEnter={() => setCounterstate(true)}>
           <Grid container sx={{ margin: "20px 0px" }}>
             <Grid
               item
@@ -35,8 +33,11 @@ export const ServicesCounter = () => {
                 sx={{
                   marginLeft: 1,
                   fontSize: { sm: "12px", xs: "11px" },
-                  lineHeight: "15px",
+                  lineHeight: {xs:"15px",xl:"20px"},
+                  fontSize: { xs: "13px", xl: "18px" },
+                  letterSpacing: "0.4px",
                 }}
+                color={theme.palette.gray}
               >
                 Happy<Box>Happy Clients</Box>
               </Box>
@@ -60,10 +61,13 @@ export const ServicesCounter = () => {
                 </Typography>
               </Box>
               <Box
+                color={theme.palette.gray}
                 sx={{
                   marginLeft: 1,
                   fontSize: { sm: "12px", xs: "11px" },
-                  lineHeight: "15px",
+                  lineHeight: {xs:"15px",xl:"20px"},
+                  fontSize: { xs: "13px", xl: "18px" },
+                  letterSpacing: "0.4px",
                 }}
               >
                 completed <Box>projects</Box>
@@ -91,8 +95,11 @@ export const ServicesCounter = () => {
                 sx={{
                   marginLeft: 1,
                   fontSize: { sm: "12px", xs: "11px" },
-                  lineHeight: "15px",
+                  lineHeight: {xs:"15px",xl:"20px"},
+                  fontSize: { xs: "13px", xl: "18px" },
+                  letterSpacing: "0.4px",
                 }}
+                color={theme.palette.gray}
               >
                 in-house <Box>specialists</Box>
               </Box>
@@ -120,7 +127,16 @@ export const ServicesCounter = () => {
                   +
                 </Typography>
               </Box>
-              <Box sx={{ marginLeft: 1, fontSize: "12px", lineHeight: "15px" }}>
+              <Box
+                color={theme.palette.gray}
+                sx={{
+                  marginLeft: 1,
+                  fontSize: "12px",
+                  lineHeight: {xs:"15px",xl:"20px"},
+                  fontSize: { xs: "13px", xl: "18px" },
+                  letterSpacing: "0.4px",
+                }}
+              >
                 our Clutch<Box>score</Box>
               </Box>
             </Grid>
