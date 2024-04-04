@@ -24,7 +24,7 @@ function App() {
         <Route path="/career-card-data/:id" element={<CareerCardData />} />
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
-      <Footer />
+      <Footer/> 
     </>
   );
 }

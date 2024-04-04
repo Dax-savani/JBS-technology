@@ -5,16 +5,18 @@ import { useTheme } from "@emotion/react";
 function CEOBox({ image, name, position }) {
   const theme = useTheme();
   return (
-    <Card >
+    <Card>
       <CardMedia component="img" height="140" image={image} alt={name} />
-      <CardContent>
+      <CardContent sx={{ padding: "8px 16px" }}>
         <Typography
           variant="h6"
           sx={{ fontSize: "19px", fontWeight: "600", lineHeight: "36px" }}
         >
           {name}
         </Typography>
-        <Typography variant="body2" color={theme.palette.gray}>{position}</Typography>
+        <Typography variant="body2" color={theme.palette.gray}>
+          {position}
+        </Typography>
       </CardContent>
     </Card>
   );

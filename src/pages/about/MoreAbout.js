@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { ServicesCounter } from "./ServicesCounter";
 import { useTheme } from "@emotion/react";
@@ -7,8 +7,8 @@ function MoreAbout() {
   const theme = useTheme();
   return (
     <>
-      <div className="MoreAboutSection">
-        <Container maxWidth="lg">
+      <div className="MoreAboutSection" style={{ margin: "40px 0px" }}>
+        <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
           <ServicesCounter />
           <Grid
             container
@@ -27,12 +27,12 @@ function MoreAbout() {
                 margin: "10px 0px",
               }}
             >
-              <div>
+              <div style={{ margin: "10px" }}>
                 <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Our History
                 </Typography>
                 <Typography
-                  sx={{ margin: "10px 0px" }}
+                  sx={{ margin: "8px 0px" }}
                   color={theme.palette.gray}
                 >
                   We have been a creative and competitive web developing company
@@ -50,12 +50,12 @@ function MoreAbout() {
                 margin: "10px 0px",
               }}
             >
-              <div>
+              <div style={{ margin: "10px" }} v>
                 <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Our Mission
                 </Typography>
                 <Typography
-                  sx={{ margin: "10px 0px" }}
+                  sx={{ margin: "8px 0px" }}
                   color={theme.palette.gray}
                 >
                   Our mission is to provide and create the projects as per ones
@@ -72,12 +72,12 @@ function MoreAbout() {
                 margin: "10px 0px",
               }}
             >
-              <div>
+              <div style={{ margin: "10px" }} v>
                 <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Who We Are
                 </Typography>
                 <Typography
-                  sx={{ margin: "10px 0px" }}
+                  sx={{ margin: "8px 0px" }}
                   color={theme.palette.gray}
                 >
                   An entrepreneur firm with clear vision and passion for the a
@@ -86,7 +86,7 @@ function MoreAbout() {
               </div>
             </Grid>
           </Grid>
-        </Container>
+        </Box>
       </div>
     </>
   );

@@ -10,12 +10,20 @@
 .aboutImage {
   text-align: center;
 }
+/* =============CONTACT===============*/
+.css-fyn699-MuiCardContent-root:last-child {
+  padding-bottom: 8px !important;
+}
 /* ===========moreabout============ */
 .boxs {
   width: 369px !important;
-  height: 212px !important;
+  height: auto !important;
   margin: 10px 10px !important;
   background-color: #fafafa !important;
+}
+.css-1oqqzyl-MuiContainer-root {
+  padding-left: 0px !important;
+  padding-right: 16px;
 }
 .css-46bh2p-MuiCardContent-root {
   padding: 5px !important;
@@ -33,4 +41,13 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
   overflow: hidden;
   border-radius: 8px !important;
+}
+.css-1bxowzv-MuiGrid-root > .MuiGrid-item {
+  padding-left: 0px !important;
+}
+.css-1bxowzv-MuiGrid-root > .MuiGrid-item {
+  padding-top: 0px !important;
+}
+.css-3sp888-MuiCardContent-root:last-child {
+  padding-bottom: 8px !important;
 }
