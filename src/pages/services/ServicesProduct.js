@@ -45,7 +45,7 @@ const ServicesProduct = () => {
   ];
   return (
     <>
-      <Container>
+      <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
         <Grid
           container
           spacing={3}
@@ -53,12 +53,13 @@ const ServicesProduct = () => {
           justifyContent={"center"}
           marginY={4}
         >
-          {data.map((val) => (
-            <Grid item md={4} sm={6}>
+          {data.map((val, ind) => (
+            <Grid item md={4} key={ind} sm={6}>
               <Box
                 bgcolor="white"
                 sx={{
-                  padding: "25px 15px",
+                  // padding: "25px 15px",
+                  padding: { xl: "35px 25px", xs: "25px 20px" },
                   borderRadius: "15px",
                   boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
                   cursor: "pointer",
@@ -68,10 +69,27 @@ const ServicesProduct = () => {
                   },
                 }}
               >
-                <Box sx={{ height: "79px", width: "72px", padding: "10px" }}>
-                  <img src={val.image} alt={val.heading} />
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100px",
+                    width: "100px",
+                  }}
+                >
+                  <Box sx={{ height: "79px", width: "72px", padding: "10px" }}>
+                    <img src={val.image} alt={val.heading} />
+                  </Box>
                 </Box>
-                <Typography variant="h5" sx={{ marginTop: "10px", fontWeight:"700" ,fontSize:{xl:"30px"}}}>
+                <Typography
+                  variant="h5"
+                  sx={{
+                    marginTop: "10px",
+                    fontWeight: "700",
+                    fontSize: { xl: "30px" },
+                  }}
+                >
                   {val.heading}
                 </Typography>
                 <Typography
@@ -79,7 +97,7 @@ const ServicesProduct = () => {
                   sx={{
                     marginTop: "8px",
                     color: `${theme.palette.gray}`,
-                    fontSize: {xs : "13px", xl:"18px"},
+                    fontSize: { xs: "13px", xl: "17px" },
                     letterSpacing: "0.5px",
                   }}
                 >
@@ -89,7 +107,7 @@ const ServicesProduct = () => {
             </Grid>
           ))}
         </Grid>
-      </Container>
+      </Box>
     </>
   );
 };

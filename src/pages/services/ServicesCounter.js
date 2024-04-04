@@ -8,7 +8,7 @@ export const ServicesCounter = () => {
   const [counterState, setCounterstate] = useState(false);
   return (
     <>
-      <Container>
+      <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
         <ScrollTrigger onEnter={() => setCounterstate(true)}>
           <Grid container sx={{ margin: "20px 0px" }}>
             <Grid
@@ -33,7 +33,7 @@ export const ServicesCounter = () => {
                 sx={{
                   marginLeft: 1,
                   fontSize: { sm: "12px", xs: "11px" },
-                  lineHeight: {xs:"15px",xl:"20px"},
+                  lineHeight: { xs: "15px", xl: "20px" },
                   fontSize: { xs: "13px", xl: "18px" },
                   letterSpacing: "0.4px",
                 }}
@@ -65,7 +65,7 @@ export const ServicesCounter = () => {
                 sx={{
                   marginLeft: 1,
                   fontSize: { sm: "12px", xs: "11px" },
-                  lineHeight: {xs:"15px",xl:"20px"},
+                  lineHeight: { xs: "15px", xl: "20px" },
                   fontSize: { xs: "13px", xl: "18px" },
                   letterSpacing: "0.4px",
                 }}
@@ -95,7 +95,7 @@ export const ServicesCounter = () => {
                 sx={{
                   marginLeft: 1,
                   fontSize: { sm: "12px", xs: "11px" },
-                  lineHeight: {xs:"15px",xl:"20px"},
+                  lineHeight: { xs: "15px", xl: "20px" },
                   fontSize: { xs: "13px", xl: "18px" },
                   letterSpacing: "0.4px",
                 }}
@@ -132,7 +132,7 @@ export const ServicesCounter = () => {
                 sx={{
                   marginLeft: 1,
                   fontSize: "12px",
-                  lineHeight: {xs:"15px",xl:"20px"},
+                  lineHeight: { xs: "15px", xl: "20px" },
                   fontSize: { xs: "13px", xl: "18px" },
                   letterSpacing: "0.4px",
                 }}
@@ -142,7 +142,7 @@ export const ServicesCounter = () => {
             </Grid>
           </Grid>
         </ScrollTrigger>
-      </Container>
+      </Box>
     </>
   );
 };
