@@ -10,7 +10,7 @@ export const ServicesCounter = () => {
     <>
       <Container>
         <ScrollTrigger onEnter={() => setCounterstate(true)}>
-          <Grid container sx={{ margin: "20px 0px" }}>
+          <Grid container sx={{ margin: "10px 0px" }}>
             <Grid
               item
               display="flex"

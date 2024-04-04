@@ -3,14 +3,15 @@ import Herosection from "./Herosection";
 import "./../../assets/styles/about.css";
 import MoreAbout from "./MoreAbout";
 import Ceo from "./Ceo";
-import { Box } from "@mui/material";
+import IntroduceSection from "./IntroduceSection";
 
 function About() {
   return (
     <>
-        <Herosection />
-        <MoreAbout />
-        <Ceo />
+      <Herosection />
+      <MoreAbout />
+      <IntroduceSection />
+      <Ceo />
     </>
   );
 }

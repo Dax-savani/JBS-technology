@@ -38,12 +38,12 @@ function ContactUs() {
       <div
         id="bannerSlider"
         className="position-relative"
-        style={{ padding: "100px 0px" }}
+        style={{ padding: "100px 0px", marginTop: "40px" }}
       >
         <TitleAnimation title={`Contact Us`} />
       </div>
       <Box bgcolor={theme.palette.backgroundLiteGrey}>
-        <Container maxWidth="lg">
+        <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
           <Grid container py={5} spacing={2}>
             <Grid
               item
@@ -188,7 +188,7 @@ function ContactUs() {
               </form>
             </Grid>
           </Grid>
-        </Container>
+        </Box>
       </Box>
     </>
   );

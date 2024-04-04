@@ -6,13 +6,14 @@ import heroimage from "../../assets/images/about/Group 380.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ServicesCounter } from "./ServicesCounter";
 import { useTheme } from "@emotion/react";
+import { Box } from "@mui/material";
 
 function Herosection() {
-  const theme =useTheme()
+  const theme = useTheme();
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
   return (
-    <div className="herosection">
-      <Container maxWidth="lg">
+    <div className="herosection" style={{ marginTop: "40px" }}>
+      <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} className="contentSide">
             <div>
@@ -32,7 +33,7 @@ function Herosection() {
             <img src={heroimage} alt="" />
           </Grid>
         </Grid>
-      </Container>
+      </Box>
     </div>
   );
 }
