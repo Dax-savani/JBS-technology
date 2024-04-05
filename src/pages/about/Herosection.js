@@ -12,10 +12,22 @@ function Herosection() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
   return (
-    <div className="herosection" style={{ marginTop: "40px" }}>
+    <Box
+      bgcolor={theme.palette.backgroundLiteGrey}
+      sx={{ padding: "64px 0 48px" }}
+    >
       <Box px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} className="contentSide">
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             <div>
               <Typography
                 variant={isSmallScreen ? "h4" : "h2"}
@@ -29,12 +41,12 @@ function Herosection() {
               </Typography>
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} className="aboutImage">
+          <Grid item xs={12} sm={6} sx={{ textAlign: "center"}}>
             <img src={heroimage} alt="" />
           </Grid>
         </Grid>
       </Box>
-    </div>
+    </Box>
   );
 }
 

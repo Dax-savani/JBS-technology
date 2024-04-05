@@ -25,8 +25,8 @@ function IntroduceSection() {
           <Grid
             container
             spacing={{ md: 4, xs: 2 }}
-            my={{ md: 1, xs: 0.5 }}
-            padding={"20px"}
+            mb={2}
+            p={{ md: "20px" }}
             alignItems={"center"}
           >
             <Grid item xs={12} lg={6}>
@@ -86,8 +86,7 @@ function IntroduceSection() {
               <Box
                 sx={{
                   height: { xs: "auto", lg: "560px" },
-                  width: { xs: "100%", lg: "588px" },
-                  padding: { lg: "0", xs: "10px" },
+                  maxWidth: "100%",
                 }}
               >
                 <img
@@ -102,7 +101,7 @@ function IntroduceSection() {
             container
             xl={12}
             spacing={{ lg: 3, xs: 3 }}
-            my={1}
+            mb={2}
             justifyContent={"center"}
             alignItems={"center"}
           >
@@ -110,7 +109,7 @@ function IntroduceSection() {
               <Box
                 sx={{
                   height: "560px",
-                  maxWidth: { md: "572px", xs: "100%" },
+                  maxWidth: "100%",
                 }}
               >
                 <img
@@ -124,7 +123,7 @@ function IntroduceSection() {
               <Box
                 sx={{
                   height: "560px",
-                  maxWidth: { md: "282px", xs: "100%" },
+                  maxWidth: "100%",
                 }}
               >
                 <img
@@ -138,7 +137,7 @@ function IntroduceSection() {
               <Box
                 sx={{
                   height: "560px",
-                  maxWidth: { md: "282px", xs: "100%" },
+                  maxWidth: "100%",
                 }}
               >
                 <img
@@ -152,15 +151,15 @@ function IntroduceSection() {
           <Grid
             container
             spacing={{ md: 4, xs: 2 }}
-            my={{ md: 1, xs: 0.5 }}
+            mb={2}
+            p={{ md: "20px" }}
             alignItems={"center"}
           >
             <Grid item lg={6}>
               <Box
                 sx={{
                   height: { xs: "auto", lg: "560px" },
-                  width: { xs: "100%", lg: "572px" },
-                  padding: { lg: "0", xs: "20px" },
+                  maxWidth: "100%",
                 }}
               >
                 <img
@@ -209,7 +208,7 @@ function IntroduceSection() {
               <Box
                 sx={{
                   height: "560px",
-                  maxWidth: { md: "282px", xs: "100%" },
+                  maxWidth: "100%",
                 }}
               >
                 <img
@@ -223,7 +222,7 @@ function IntroduceSection() {
               <Box
                 sx={{
                   height: "560px",
-                  maxWidth: { md: "580px", xs: "100%" },
+                  maxWidth: "100%",
                   borderRadius: "10px",
                 }}
               >
@@ -238,7 +237,7 @@ function IntroduceSection() {
               <Box
                 sx={{
                   height: "560px",
-                  maxWidth: { md: "282px", xs: "100%" },
+                  maxWidth: "100%",
                 }}
               >
                 <img

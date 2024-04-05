@@ -1,11 +1,10 @@
 import React from "react";
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
-
 function CEOBox({ image, name, position }) {
   const theme = useTheme();
   return (
-    <Card>
+    <Card sx={{ margin: "3px 0px" }}>
       <CardMedia component="img" height="140" image={image} alt={name} />
       <CardContent sx={{ padding: "8px 16px" }}>
         <Typography
@@ -21,5 +20,4 @@ function CEOBox({ image, name, position }) {
     </Card>
   );
 }
-
 export default CEOBox;

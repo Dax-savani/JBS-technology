@@ -156,7 +156,7 @@ function Ceo() {
           </Box>
           <Grid container justifyContent="start" spacing={3} py={3}>
             {staff.map((item, index) => (
-              <Grid item lg={3} sm={6} x s={12} key={index}>
+              <Grid item lg={3} sm={6} xs={12} key={index}>
                 <CEOBox
                   image={item.img}
                   name={item.name}

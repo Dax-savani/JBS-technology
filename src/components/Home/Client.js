@@ -8,6 +8,7 @@ import company2 from "../../assets/images/home-image/company2.svg";
 import company3 from "../../assets/images/home-image/company3.png";
 import company4 from "../../assets/images/home-image/company4.png";
 import company5 from "../../assets/images/home-image/company5.png";
+import bglayer2 from "../../assets/images/home-image/bglayer2.png";
 
 const Client = () => {
   const options = {
@@ -54,9 +55,9 @@ const Client = () => {
   return (
     <>
       <Box
-        mt="40px"
+        mb={"-40px"}
         px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
-        sx={{ mt: "40px" }}
+        sx={{ py: "60px", background: `url(${bglayer2}) no-repeat 0% 60%` }}
       >
         <Box py={5}>
           <Typography
@@ -87,7 +88,7 @@ const Client = () => {
           </OwlCarousel>
         </Box>
       </Box>
-      </>
+    </>
   );
 };
 

@@ -17,7 +17,7 @@ const MileStone = () => {
           background: `linear-gradient(rgba(0, 51, 97, 0.6), rgba(0, 0, 0, 0.9)), url(${keyboardImg}) no-repeat fixed`,
           backgroundSize: "cover",
           py: "70px",
-          mt: "40px",
+          // mt: "60px",
         }}
       >
         <TitleAnimation title="Milestones Achieved So Far" />

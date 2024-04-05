@@ -2,7 +2,6 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { ServicesCounter } from "./ServicesCounter";
 import { useTheme } from "@emotion/react";
-
 function MoreAbout() {
   const theme = useTheme();
   return (
@@ -12,22 +11,32 @@ function MoreAbout() {
           <ServicesCounter />
           <Grid
             container
-            spacing={2}
             sx={{
-              margin: "10px 0px",
-              display: "flex",
-              justifyContent: "center",
+              my: "10px",
             }}
+            spacing={2}
           >
             <Grid
-              className="boxs"
               item
+              md={4}
+              sm={6}
               sx={{
-                borderRadius: "15px",
                 margin: "10px 0px",
               }}
             >
-              <div style={{ margin: "10px" }}>
+              <Box
+                sx={{
+                  backgroundColor: theme.palette.backgroundLiteGrey,
+                  p: "25px",
+                  borderRadius: "15px",
+                  height: "100%",
+                  transition: " 0.5s",
+                  cursor:"pointer",
+                  "&:hover": {
+                    transform: "translateY(-10px)",
+                  },
+                }}
+              >
                 <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Our History
                 </Typography>
@@ -40,17 +49,29 @@ function MoreAbout() {
                   while matching the asked deadlines of the project. Started
                   with the team of 2 to 10+ we're growing continuously.
                 </Typography>
-              </div>
+              </Box>
             </Grid>
             <Grid
               item
-              className="boxs"
+              md={4}
+              sm={6}
               sx={{
-                borderRadius: "15px",
                 margin: "10px 0px",
               }}
             >
-              <div style={{ margin: "10px" }} v>
+              <Box
+                sx={{
+                  backgroundColor: theme.palette.backgroundLiteGrey,
+                  p: "25px",
+                  borderRadius: "15px",
+                  height: "100%",
+                  transition: " 0.5s",
+                  cursor:"pointer",
+                  "&:hover": {
+                    transform: "translateY(-10px)",
+                  },
+                }}
+              >
                 <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Our Mission
                 </Typography>
@@ -62,17 +83,29 @@ function MoreAbout() {
                   vision with the utmost code quality forged with Passion and
                   Hard work.
                 </Typography>
-              </div>
+              </Box>
             </Grid>
             <Grid
               item
-              className="boxs"
+              md={4}
+              sm={6}
               sx={{
-                borderRadius: "15px",
                 margin: "10px 0px",
               }}
             >
-              <div style={{ margin: "10px" }} v>
+              <Box
+                sx={{
+                  backgroundColor: theme.palette.backgroundLiteGrey,
+                  p: "25px",
+                  borderRadius: "15px",
+                  height: "100%",
+                  transition: " 0.5s",
+                  cursor:"pointer",
+                  "&:hover": {
+                    transform: "translateY(-10px)",
+                  },
+                }}
+              >
                 <Typography variant="h6" sx={{ fontWeight: "600" }}>
                   Who We Are
                 </Typography>
@@ -83,7 +116,7 @@ function MoreAbout() {
                   An entrepreneur firm with clear vision and passion for the a
                   greater success for the company and the clients.
                 </Typography>
-              </div>
+              </Box>
             </Grid>
           </Grid>
         </Box>
@@ -91,5 +124,4 @@ function MoreAbout() {
     </>
   );
 }
-
 export default MoreAbout;

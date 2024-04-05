@@ -2,14 +2,16 @@ import { Box, Container, Grid, Paper, Typography } from "@mui/material";
 import React from "react";
 import group from "../../assets/images/home-image/4.png";
 import smallLogo from "../../assets/images/home-image/Group 370.png";
+import bglayer1 from "../../assets/images/home-image/bglayer1.png";
 
 const WhyUs = () => {
   return (
     // <Container sx={{ mt: "40px" }}>
     <Box
-      mt="40px"
+      // mt="40px"
       px={{ xs: "2rem", sm: "4rem", md: "6rem", xl: "8rem" }}
-      sx={{ mt: "40px" }}
+      sx={{ background: `url(${bglayer1}) no-repeat 0% 0%` }}
+      py="60px"
     >
       <Box>
         <Typography
