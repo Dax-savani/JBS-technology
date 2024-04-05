@@ -7,9 +7,9 @@ import IntroduceSection from "./IntroduceSection";
 function About() {
   return (
     <>
-      {/* <Herosection /> */}
-      {/* <MoreAbout /> */}
-      {/* <IntroduceSection /> */}
+      <Herosection />
+      <MoreAbout />
+      <IntroduceSection />
       <Ceo />
     </>
   );

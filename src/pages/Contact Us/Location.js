@@ -20,7 +20,7 @@ function Location() {
                 Mail Here
               </Typography>
               <Typography variant="body1" sx={{ color: "#6c757d" }}>
-                contact@ghanshyamdigital.com
+                jbs.technology26@gmail.com
               </Typography>
             </Box>
           </Grid>
@@ -35,8 +35,7 @@ function Location() {
                 Visit Here
               </Typography>
               <Typography variant="body1" sx={{ color: "#6c757d" }}>
-                107, 1st Floor, 21st century business centre, Nr.World trade
-                centre, Ring Road, Surat - 395003, Gujarat, IN
+                F-38 , City Center, Yogi Chowk Surat - 395006 , Gujarati. IN
               </Typography>
             </Box>
           </Grid>
@@ -51,7 +50,7 @@ function Location() {
                 Call Here
               </Typography>
               <Typography variant="body1" sx={{ color: "#6c757d" }}>
-                +91 98752 63080
+                +91 79844 43901
               </Typography>
             </Box>
           </Grid>
